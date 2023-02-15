@@ -1,38 +1,149 @@
-.App {
-  text-align: center;
+
+
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body{
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
 }
 
-.App-link {
-  color: #61dafb;
+
+
+.container {
+  background-color: #1d2a35;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.right_btn {
+  font-size: 1.2rem;
+  font-weight: 600;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  margin: 0 0.4rem;
+}
+
+.left_side {
+  margin-left: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.right_btn {
+  margin-right: 1rem;
+}
+.log_in {
+  padding: 0.6rem 2.5rem;
+  background-color: #04aa6d;
+  color: #fff;
+}
+.Website {
+  padding: 0.6rem 1.2rem;
+  color: #000000ed;
+  background-color: #fff4a3;
+}
+.certified {
+  padding: 0.6rem 1.2rem;
+  color: #000000ed;
+  background-color: #ffc0c7;
+}
+.pro {
+  padding: 0.6rem 1rem;
+  color: #000000ed;
+  background-color: #ffffff;
+}
+
+.left_btn {
+  color: #dddddd;
+  background-color: transparent;
+  font-size: 1.1rem;
+  letter-spacing: 1.2px;
+  font-weight: 600;
+  border: none;
+  /* margin: 0 0.4rem ; */
+  padding: 1.5rem 1rem;
+  cursor: pointer;
+}
+
+.left_btn:hover {
+  background-color: #04aa6d;
+  color: #ffffff;
+}
+
+.fa-solid {
+  font-size: 1.2rem;
+  margin-right: 1.2rem;
+  color: #dddddd;
+  cursor: pointer;
+}
+
+.fa-solid:hover {
+  color: #04aa6d;
+}
+
+.image {
+  width: 45px;
+  margin-right: 1rem;
+  cursor: pointer;
+}
+
+.form_container {
+  box-shadow: 0 0 2px gray;
+  width: 30rem;
+  padding: 2.5rem 2rem;
+  border-radius: 20px;
+
+}
+
+.form_container h2 {
+  margin-bottom: 1.5rem;
+  font-size: 2.2rem;
+}
+/* .form_container form {
+  line-height: 1.6rem;
+} */
+.form_container form label {
+  font-weight: bold;
+  
+}
+.form_container form input {
+  padding: 0.8rem 1rem;
+  border: none;
+  outline: none;
+  box-shadow: 0 0 2px gray;
+  width: 100%;
+  font-size: 1rem;
+  border-radius: 5px;
+  margin-top: 0.5rem;
+}
+.form_container form input:focus {
+  box-shadow: 0 0 5px rgb(170, 216, 234);
+
+  outline: 4px solid rgb(170, 216, 234);
+}
+.form_container form button {
+  width: 100%;
+  background-color: #04aa6d;
+  color: #ffffff;
+  margin-left: 0;
+  margin-top: 2rem;
+  padding: 0.6rem 1rem;
+}
+.userEmail{
+  margin-top: 3rem;
 }
